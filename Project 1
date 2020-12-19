@@ -1,0 +1,19 @@
+start_value = int(input ("Please enter the starting value : "))
+end_value = int(input ("Please enter the ending value: "))
+
+def print_values(print_values,divisible_value):
+    print (print_values,"--",divisible_value)
+
+def divisible_by():
+    if ((start_value % 3) == 0) and ((start_value % 5) == 0):
+        print_values (start_value, "Both")
+    elif (start_value % 3) == 0:
+        print_values(start_value, 3)
+    elif (start_value % 5) == 0:
+        print_values(start_value, 5)
+    else:
+        print (str(start_value))
+
+while (start_value <= end_value):
+    divisible_by()
+    start_value = start_value + 1
